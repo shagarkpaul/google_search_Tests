@@ -63,6 +63,18 @@ public class searchProducts {
     
 		Assert.assertTrue(searchResult.isDisplayed());
 		
+       WebElement searchResult1 = driver.findElement(By.id("result-stats"));
+		
+		String resultText2  = searchResult.getText();
+		
+		System.out.println("===================================================");
+		
+		System.out.println(resultText);
+		
+		System.out.println("====================================================");
+    
+		Assert.assertTrue(searchResult.isDisplayed());
+		
 	}
 
 
